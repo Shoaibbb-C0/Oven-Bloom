@@ -19,4 +19,15 @@ test('catalogue filters and enquiry validation work', async () => withServer(asy
 
   const invalidOrder = await fetch(`${base}/api/orders`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ productSlug: 'missing-product', name: 'API Test', contact: 'test@example.com', quantity: 1 }) })
   assert.equal(invalidOrder.status, 404)
+
+  const invalidContact = await fetch(`${base}/api/contact`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ name: '', replyTo: 'not-contact', subject: '', message: 'short' }) })
+  assert.equal(invalidContact.status, 400)
+
+  const invalidQuantity = await fetch(`${base}/api/orders`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ productSlug: 'celebration-cake', name: 'API Test', contact: 'test@example.com', quantity: 0 }) })
+  assert.equal(invalidQuantity.status, 400)
+
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    const order = await fetch(`${base}/api/orders`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ productSlug: 'celebration-cake', name: 'API Test', contact: 'test@example.com', quantity: 1, notes: 'Repeated submission test' }) })
+    assert.equal(order.status, 201)
+  }
 }))

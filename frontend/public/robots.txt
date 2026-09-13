@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oven-and-bloom.shaikhshoaib26149.chatgpt.site/sitemap.xml

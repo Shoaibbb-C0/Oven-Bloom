@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false, limit: '100kb' }))
 app.use('/api/health', healthRouter)
 app.use('/api/products', productsRouter)
 app.use('/api/categories', categoriesRouter)
-app.use('/api', enquiriesRouter)
+app.use('/api', rateLimit({ windowMs: 15 * 60 * 1000, limit: 12, standardHeaders: 'draft-8', legacyHeaders: false }), enquiriesRouter)
 app.use(notFound)
 app.use(errorHandler)
 

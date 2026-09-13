@@ -1,5 +1,5 @@
 export function LoadingState({ label = 'Loading…' }) {
-  return <div className="request-state" role="status"><span className="request-state__spinner" aria-hidden="true" />{label}</div>
+  return <div className="request-state" role="status"><span>{label}</span><div className="request-skeletons" aria-hidden="true"><i/><i/><i/></div></div>
 }
 
 export function ErrorState({ message, onRetry }) {
