@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
+import { brand } from '../../data/brand'
+
 export default function Logo() {
   return (
-    <a className="brand-logo" href="/" aria-label="Magic Mamta home">
-      <span>Magic</span>
-      <span>Mamta</span>
-    </a>
+    <Link className="brand-logo" to="/" aria-label={`${brand.name} home`}>
+      <span>Oven &</span>
+      <span>Bloom</span>
+    </Link>
   )
 }

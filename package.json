@@ -1,5 +1,5 @@
 {
-  "name": "magic-mamta",
+  "name": "oven-and-bloom",
   "private": true,
   "scripts": {
     "build": "npm --prefix frontend run build",

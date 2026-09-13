@@ -8,7 +8,7 @@ export default function SearchTrigger() {
 
   return (
     <form className={`search ${expanded ? 'search--expanded' : ''}`} onSubmit={(event) => { event.preventDefault(); const value = new FormData(event.currentTarget).get('search').trim(); if (value) navigate(`/menu?search=${encodeURIComponent(value)}`) }}>
-      <label className="sr-only" htmlFor={inputId}>Search the Magic Mamta menu</label>
+      <label className="sr-only" htmlFor={inputId}>Search the Oven & Bloom menu</label>
       <span aria-hidden="true">⌕</span>
       <input
         id={inputId}

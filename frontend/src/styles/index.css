@@ -136,7 +136,21 @@ button, input { font: inherit; }
 .food-gallery figure:nth-child(5) { grid-column: 8 / span 5; }
 
 .visit-section { position: relative; overflow: hidden; padding-block: clamp(7rem,13vw,12rem); color: white; background: #8e1f2d; text-align: center; }
-.visit-section::before { content: 'MAGIC MAMTA'; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: rgba(255,255,255,.045); font-family: 'DM Serif Display',serif; font-size: 18vw; line-height: 1; white-space: nowrap; }
+.visit-section::before { content: 'OVEN & BLOOM'; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: rgba(255,255,255,.045); font-family: 'DM Serif Display',serif; font-size: 18vw; line-height: 1; white-space: nowrap; }
+
+.request-state { min-height: 16rem; display: grid; place-items: center; align-content: center; gap: 1rem; text-align: center; color: var(--muted); }
+.request-state__spinner { width: 2rem; height: 2rem; border: 2px solid rgba(157,28,44,.2); border-top-color: var(--brand); border-radius: 50%; animation: request-spin .7s linear infinite; }
+.request-state--error { border-block: 1px solid var(--line); }
+.order-enquiry { margin-top: 2rem; padding: clamp(1.25rem,3vw,2rem); border: 1px solid var(--line); background: var(--ivory); }
+.order-enquiry__heading { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; }
+.order-enquiry h2 { font-size: clamp(2rem,4vw,3.25rem); margin: .35rem 0 1rem; }
+.order-enquiry__close { border: 0; background: transparent; font-size: 2rem; cursor: pointer; }
+.order-enquiry form { display: grid; gap: 1rem; margin-top: 1.5rem; }
+.order-enquiry form div { display: grid; gap: .4rem; }
+.order-enquiry input, .order-enquiry textarea { width: 100%; border: 1px solid var(--line); background: white; padding: .85rem 1rem; font: inherit; }
+.contact-form__notice.is-error { color: #8e1a2a; }
+@keyframes request-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .request-state__spinner { animation: none; } }
 .visit-section__inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
 .visit-section .section-heading__eyebrow { color: #f0c4c9; }
 .visit-section h2 em { color: #fff; }

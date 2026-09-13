@@ -1,11 +1,12 @@
 {
-  "name": "magic-mamta-backend",
+  "name": "oven-and-bloom-backend",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test": "node --test"
   },
   "dependencies": {
     "cors": "latest",

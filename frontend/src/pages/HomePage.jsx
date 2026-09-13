@@ -5,7 +5,7 @@ import BestsellersSection from '../components/home/bestsellers/BestsellersSectio
 import BrandStatement from '../components/home/brand/BrandStatement'
 import CakeFeature from '../components/home/cakes/CakeFeature'
 import SavouryFeature from '../components/home/savoury/SavouryFeature'
-import WhyMagicMamta from '../components/home/benefits/WhyMagicMamta'
+import WhyOvenAndBloom from '../components/home/benefits/WhyOvenAndBloom'
 import FoodGallery from '../components/home/gallery/FoodGallery'
 import VisitCTA from '../components/home/visit/VisitCTA'
 import Footer from '../components/common/Footer'
@@ -24,7 +24,7 @@ export default function HomePage() {
         <BrandStatement />
         <CakeFeature />
         <SavouryFeature />
-        <WhyMagicMamta />
+        <WhyOvenAndBloom />
         <FoodGallery />
         <VisitCTA />
         <Footer />

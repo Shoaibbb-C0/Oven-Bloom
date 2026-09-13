@@ -39,3 +39,5 @@ export const menuCategories = Object.keys(categoryLabels)
 export const productPath = (product) => `/product/${product.slug}`
 export const findProduct = (slug) => products.find((product) => product.slug === slug)
 
+const imagesBySlug = Object.fromEntries(products.map(({ slug, image, images }) => [slug, { image, images }]))
+export const withProductImage = (product) => ({ ...product, ...(imagesBySlug[product.slug] || {}) })

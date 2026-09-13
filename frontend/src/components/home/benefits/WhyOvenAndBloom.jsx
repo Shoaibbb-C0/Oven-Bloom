@@ -8,11 +8,11 @@ const reasons = [
   ['Something for everyone', 'From desserts to satisfying savouries.'],
 ]
 
-export default function WhyMagicMamta() {
+export default function WhyOvenAndBloom() {
   return (
     <section className="home-section reasons-section">
       <Container>
-        <SectionHeading eyebrow="Why Magic Mamta" title={<>One counter.<br /><em>Plenty to love.</em></>} />
+        <SectionHeading eyebrow="Why Oven & Bloom" title={<>One counter.<br /><em>Plenty to love.</em></>} />
         <div className="reasons-grid">{reasons.map(([title, copy], index) => <article key={title} data-reveal><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
       </Container>
     </section>
