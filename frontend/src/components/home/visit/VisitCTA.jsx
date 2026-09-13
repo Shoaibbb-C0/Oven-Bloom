@@ -5,9 +5,10 @@ export default function VisitCTA() {
   return (
     <section className="visit-section">
       <Container className="visit-section__inner">
-        <p className="section-heading__eyebrow" data-reveal>Ready when you are</p>
-        <h2 data-reveal>Find your<br /><em>favourite.</em></h2>
-        <div className="visit-section__actions" data-reveal><Link className="button button--light" to="/contact">Contact us <span aria-hidden="true">→</span></Link><a className="visit-section__order" href="https://www.swiggy.com/city/pusad" target="_blank" rel="noreferrer">Order now ↗</a></div>
+        <p className="section-heading__eyebrow" data-reveal>One more craving?</p>
+        <h2 data-reveal>Still<br /><em>craving more?</em></h2>
+        <p className="visit-section__copy" data-reveal>Explore the full menu or get in touch for cakes, celebrations and enquiries.</p>
+        <div className="visit-section__actions" data-reveal><Link className="button button--light" to="/menu">Explore Menu <span aria-hidden="true">→</span></Link><Link className="visit-section__order" to="/contact">Contact Us ↗</Link></div>
       </Container>
     </section>
   )

@@ -33,7 +33,7 @@ export default function Hero() {
           </section>
           <HeroProducts />
         </div>
-        <div className="hero__footer" data-animate="copy"><span>Pusad, Maharashtra</span><span>Scroll to discover <i aria-hidden="true">↓</i></span></div>
+        <div className="hero__footer" data-animate="copy"><span>Sweet • Savoury • Celebrations</span><span>Scroll to discover <i aria-hidden="true">↓</i></span></div>
       </Container>
     </main>
   )
