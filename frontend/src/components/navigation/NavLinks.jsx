@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 const links = [
-  ['Home', '/'], ['Menu', '/menu'], ['Cakes', '/cakes'], ['Snacks', '/menu#snacks'], ['About', '/about'],
+  ['Home', '/'], ['Menu', '/menu'], ['Cakes', '/cakes'], ['Snacks', '/snacks'], ['About', '/about'],
 ]
 
 export default function NavLinks({ onNavigate }) {

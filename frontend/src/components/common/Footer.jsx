@@ -3,9 +3,9 @@ import Logo from './Logo'
 import Container from './Container'
 
 const columns = [
-  ['Explore', [['Home','/'],['Menu','/menu'],['Cakes','/cakes'],['Snacks','/menu#snacks'],['About','/about']]],
+  ['Explore', [['Home','/'],['Menu','/menu'],['Cakes','/cakes'],['Snacks','/snacks'],['About','/about']]],
   ['Help', [['Contact','/contact'],['Order','https://www.swiggy.com/city/pusad']]],
-  ['Categories', [['Cakes','/cakes'],['Desserts','/menu#desserts'],['Pizza','/menu#pizza'],['Snacks','/menu#snacks'],['Beverages','/menu#beverages']]],
+  ['Categories', [['Cakes','/cakes'],['Desserts','/menu?category=desserts'],['Pizza','/menu?category=pizza'],['Snacks','/snacks'],['Beverages','/menu?category=beverages']]],
 ]
 
 export default function Footer() {
