@@ -5,7 +5,6 @@ import Header from '../../navigation/Header'
 import HeroHeading from './HeroHeading'
 import HeroProducts from './HeroProducts'
 import HeroCopy from './HeroCopy'
-import HeroCategories from './HeroCategories'
 
 export default function Hero() {
   const heroRef = useRef(null)
@@ -26,11 +25,15 @@ export default function Hero() {
     <main className="hero" ref={heroRef}>
       <Container className="hero__inner">
         <Header />
-        <div className="hero__eyebrow" data-animate="copy"><span>Magic Mamta / Pusad</span><span>Bakery • Café • Everyday bites</span></div>
-        <HeroHeading />
-        <HeroProducts />
-        <HeroCopy />
-        <HeroCategories />
+        <div className="hero__content">
+          <section className="hero__message" aria-labelledby="hero-title">
+            <div className="hero__eyebrow" data-animate="copy"><span>Bakery • Café • Everyday bites</span></div>
+            <HeroHeading />
+            <HeroCopy />
+          </section>
+          <HeroProducts />
+        </div>
+        <div className="hero__footer" data-animate="copy"><span>Pusad, Maharashtra</span><span>Scroll to discover <i aria-hidden="true">↓</i></span></div>
       </Container>
     </main>
   )

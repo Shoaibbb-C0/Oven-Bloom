@@ -3,7 +3,7 @@ import HeroActions from './HeroActions'
 export default function HeroCopy() {
   return (
     <div className="hero-copy">
-      <p data-animate="copy">From celebration cakes to everyday favourites, Magic Mamta brings together bakery classics, satisfying bites and indulgent treats.</p>
+      <p data-animate="copy">Cakes, flaky bakes, loaded bites and cold treats—made fresh for every kind of craving.</p>
       <HeroActions />
     </div>
   )
