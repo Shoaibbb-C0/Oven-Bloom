@@ -2,6 +2,8 @@
 
 Oven & Bloom is a premium bakery and everyday-food brand concept designed and developed as a full-stack web experience. It combines editorial food presentation with product discovery, search, enquiries, and a lightweight backend.
 
+**Live site:** [oven-bloom-17zo-two.vercel.app](https://oven-bloom-17zo-two.vercel.app/)
+
 ## What it is
 
 A responsive full-stack bakery and food-brand website built as a portfolio project. The interface uses a restrained single-colour identity, bold editorial typography, carefully composed food photography, and quiet interaction design.
@@ -44,6 +46,12 @@ For a production build:
 npm run build
 npm --prefix backend test
 ```
+
+## Deployment
+
+The frontend is deployed on Vercel: [View the live site](https://oven-bloom-17zo-two.vercel.app/).
+
+Vercel builds the app from the repository root using the configuration in `vercel.json`. Client-side routes are rewritten to `index.html` so direct visits and page refreshes work correctly.
 
 ## Environment variables
 
